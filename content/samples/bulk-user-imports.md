@@ -174,7 +174,7 @@ Expired jobs are completed jobs that were created more than 2 hours ago.
 }
 ```
 
-Job status is also added to [Tenant Logs](##), letting you setup a custom WebHook to be triggered using the [WebHook Logs Extension](/extensions/management-api-webhooks).
+Job status is also added to [Tenant Logs](##), letting you setup a custom WebHook to be triggered using the [WebHook Logs Extension](##).
 
 ## Job timeouts
 
