@@ -1,14 +1,7 @@
 ---
 title: "Writing Samples"
 menu: "main"
-weight: 2
+weight: 3
 ---
 
-[Placeholder](/samples/placeholder) \
-A placeholder description.
-
-[Redirect Users](/samples/redirect-users-within-rules) \
-A placeholder description.
-
-[Email verified](/samples/verify-email) \
-A placeholder description.
+All links in the following writing samples point to nowhere.

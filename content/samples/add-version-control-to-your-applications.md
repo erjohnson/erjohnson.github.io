@@ -1,7 +1,8 @@
 ---
 title: "Add Simple Version Control to Your Applications"
-date: "2022-02-02"
+date: "2014"
 summary: "Blog post for Orchestrate.io"
+hiddenInHomelist: true
 ---
 
 These days users switch between multiple devices, collaborate remotely with co-workers and even participate in crowd curated content. From a database perspective, there are plenty of ways to potentially overwrite data. Though we've built some features to avoid duplicate writes into Orchestrate to avoid duplicate writes, there are still applications that benefit from looking through previous versions. For example, a text editor where you can revert to previous revisions.

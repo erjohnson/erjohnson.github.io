@@ -1,7 +1,7 @@
 baseURL = "https://erjohnson.github.io"
 languageCode = 'en-us'
-title = "eric's site"
-theme = "hugo-bearcub"
+title = "ej"
+theme = "PaperMod"
 copyright = "Eric Johnson"
 defaultContentLanguage = "en"
 
@@ -24,12 +24,12 @@ enableRobotsTXT = true
 # see https://gohugo.io/content-management/multilingual/
 [languages]
   [languages.en]
-    title = "eric's site"
+    title = "ej"
     languageName = "en-US"
     LanguageCode = "en-US"
     contentDir = "content"
     [languages.en.params]
-      blogPath = "/posts" # Path to your blog section (used by RSS)
+      blogPath = "/blog" # Path to your blog section (used by RSS)
       madeWith = "Made with [Bear Cub](https://github.com/clente/hugo-bearcub)"
 
 # Dates are displayed following the format below. For more information about
@@ -46,3 +46,5 @@ hideUntranslated = false
 # `generateSocialCard` to false, you can prevent this behavior. For more
 # information see layouts/partials/seo_tags.html
 generateSocialCard = false
+
+hideFooter = true

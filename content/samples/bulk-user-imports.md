@@ -1,7 +1,8 @@
 ---
 title: "Bulk User Imports"
-date: "2022-02-02"
+date: "2019"
 summary: "Tutorial for Auth0"
+hiddenInHomelist: true
 ---
 
 This tutorial shows you how to bulk import user data into Auth0 using the [create import users job](##) endpoint. Bulk imports are useful for migrating users from an existing database or service to Auth0.
