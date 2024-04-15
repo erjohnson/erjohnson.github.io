@@ -60,7 +60,7 @@ If the request is successful, you'll receive a response similar to the following
 
 The returned entity represents the import job.
 
-When the user import job finishes and if `send_completion_email` was set to `true`, the tenant administrators will get an email notifying them that job either failed or succeeded. For example, an email for a failed job might say it failed to parse the users JSON file when importing users.
+When the user import job finishes and if `send_completion_email` was set to `true`, the tenant administrators will get an email notifying them that the job either failed or succeeded. For example, an email for a failed job might say it failed to parse the users JSON file when importing users.
 
 ### Concurrent import jobs
 

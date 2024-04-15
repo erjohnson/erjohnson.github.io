@@ -4,9 +4,7 @@ title: "About"
 # weight: 1
 ---
 
-Hey, I'm Eric! I'm a technical writer based in Portland, Oregon.
-
-My main interests are documentation, game development, and gamedev tooling.
+I'm Eric Johnson, a technical writer and programmer based in Portland, Oregon. I've been writing about tech since 2014.
 
 I use [Odin](https://odin-lang.org) or C/C++ for most of my personal programming projects.
 
@@ -17,6 +15,6 @@ I use [Odin](https://odin-lang.org) or C/C++ for most of my personal programming
 
 ## Blogs
 
+- [Fabrizio Ferri Benedetti (technical writing)](https://passo.uno/)
 - [Inigo Quilez (graphics, math)](https://iquilezles.org/)
 - [Alex Tardif (graphics)](https://alextardif.com/)
-- [Tom Johnson (technical writing)](https://idratherbewriting.com/)
