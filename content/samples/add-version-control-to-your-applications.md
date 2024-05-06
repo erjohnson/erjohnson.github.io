@@ -20,10 +20,11 @@ Ensure you have [Ruby](##) and [Bundler](##) installed.
 Let's start by setting up the structure for the app:
 
 ```text
-/my_app
-	/public
-		/css
-	/views
+.
+└── my_app/
+    ├── public/
+    │   └── css
+    └── views/
 ```
 
 ### Dependencies
@@ -116,16 +117,17 @@ Visit localhost:9292 in the browser should return "Hello World!"
 At this point, your app directory should look something like this:
 
 ```text
-/my_app
-	/public
-		/css
-	/views
-	.env
-	.gitignore
-	app.rb
-	config.ru
-	Gemfile
-	Gemfile.lock
+.
+└── my_app/
+    ├── public/
+    │   └── css
+    ├── views/
+    ├── .env
+    ├── .gitignore
+    ├── app.rb
+    ├── config.ru
+    ├── Gemfile
+    └── Gemfile.lock
 ```
 
 ## Adding Styles

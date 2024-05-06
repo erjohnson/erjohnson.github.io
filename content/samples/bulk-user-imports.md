@@ -47,14 +47,14 @@ If the request is successful, you'll receive a response similar to the following
 
 ```json
 {
-	"status": "pending",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"upsert": false,
-	"external_id": "EXTERNAL_ID",
-	"send_completion_email": true
+  "status": "pending",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "upsert": false,
+  "external_id": "EXTERNAL_ID",
+  "send_completion_email": true
 }
 ```
 
@@ -68,9 +68,9 @@ The [create import users job](##) endpoint has a limit of two concurrent import 
 
 ```json
 {
-	"statusCode": 429,
-	"error": "Too Many Requests",
-	"message": "There are 2 active import users jobs, please wait until some of them are finished and try again"
+  "statusCode": 429,
+  "error": "Too Many Requests",
+  "message": "There are 2 active import users jobs, please wait until some of them are finished and try again"
 }
 ```
 
@@ -91,12 +91,12 @@ Depending on the status of the user import job, you'll receive a response simila
 
 ```json
 {
-	"status": "pending",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"external_id": "EXTERNAL_ID"
+  "status": "pending",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "external_id": "EXTERNAL_ID"
 }
 ```
 
@@ -104,14 +104,14 @@ Depending on the status of the user import job, you'll receive a response simila
 
 ```json
 {
-	"status": "processing",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"external_id": "EXTERNAL_ID",
-	"percentage_done": 0,
-	"time_left_seconds": 0
+  "status": "processing",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "external_id": "EXTERNAL_ID",
+  "percentage_done": 0,
+  "time_left_seconds": 0
 }
 ```
 
@@ -121,19 +121,19 @@ If a job is completed, the job status response includes totals of successful, fa
 
 ```json
 {
-	"status": "completed",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"external_id": "EXTERNAL_ID",
-	"location": "https://your_domain.com/EXAMPLE",
-	"summary": {
-		"failed": 0,
-		"updated": 0,
-		"inserted": 1,
-		"total": 1
-	}
+  "status": "completed",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "external_id": "EXTERNAL_ID",
+  "location": "https://your_domain.com/EXAMPLE",
+  "summary": {
+    "failed": 0,
+    "updated": 0,
+    "inserted": 1,
+    "total": 1
+  }
 }
 ```
 
@@ -143,18 +143,18 @@ If there is an error in the job it will return as failed. Invalid user informati
 
 ```json
 {
-	"status": "failed",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"external_id": "EXTERNAL_ID",
-	"summary": {
-		"failed": 1,
-		"updated": 0,
-		"inserted": 0,
-		"total": 1
-	}
+  "status": "failed",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "external_id": "EXTERNAL_ID",
+  "summary": {
+    "failed": 1,
+    "updated": 0,
+    "inserted": 0,
+    "total": 1
+  }
 }
 ```
 
@@ -166,12 +166,12 @@ Expired jobs are completed jobs that were created more than 2 hours ago.
 
 ```json
 {
-	"status": "expired",
-	"type": "users_import",
-	"created_at": "",
-	"id": "job_abc123",
-	"connection_id": "CONNECTION_ID",
-	"external_id": "EXTERNAL_ID"
+  "status": "expired",
+  "type": "users_import",
+  "created_at": "",
+  "id": "job_abc123",
+  "connection_id": "CONNECTION_ID",
+  "external_id": "EXTERNAL_ID"
 }
 ```
 
