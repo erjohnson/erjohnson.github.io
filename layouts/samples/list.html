@@ -3,7 +3,7 @@
 		{{ .Content }}
 		<br/>
 		<ul class="postlist">
-			{{ range .Paginator.Pages }}
+			{{ range .Pages }}
 				<li>
 					<a aria-label="link to writing sample {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
 					<span class="dateBit">{{ .Params.sample.kind }}, {{ .Params.sample.src }}</span>
