@@ -1,8 +1,13 @@
 ---
 title: "Managing Active Anti-Entropy"
 date: "2016"
-summary: "Usage guide for Riak KV"
-hiddenInHomelist: true
+summary: "Configuration reference for the Riak database's active anti-entropy system."
+weight: 40
+params:
+  hiddenInHomelist: true
+  sample:
+    kind: "Reference"
+    src: "Basho"
 ---
 
 Riak's [active anti-entropy](##) (AAE) subsystem is a set of background processes that repair object inconsistencies stemming from missing or divergent object values across nodes. Riak operators can turn AAE on and off and configure and monitor its functioning.

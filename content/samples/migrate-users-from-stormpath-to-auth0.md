@@ -1,7 +1,12 @@
 ---
 title: "Migrate Users from Stormpath to Auth0"
-summary: "Tutorial for Auth0"
-hiddenInHomelist: true
+summary: "I wrote this tutorial on migrating users from a competitor when it announced it was closing down."
+weight: 20
+params:
+  hiddenInHomelist: true
+  sample:
+    kind: "Tutorial"
+    src: "Auth0"
 ---
 
 Auth0 supports [automatic migration](##) of users from a [custom database connection](##) to Auth0. This feature lets you configure a custom database connection which will migrate users from an external application, such as Stormpath, to Auth0. It allows for a smooth migration of users over time, without requiring users to reset their password as a result of the migration.
