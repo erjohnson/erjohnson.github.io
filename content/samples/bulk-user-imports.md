@@ -3,8 +3,8 @@ title: "Bulk User Imports"
 date: "2019"
 summary: "Created to address customer feedback about a lack of examples for importing huge amounts of user data."
 weight: 10
+hiddenInHomelist: true
 params:
-  hiddenInHomelist: true
   sample:
     kind: "Tutorial"
     src: "Auth0"

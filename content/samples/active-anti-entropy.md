@@ -3,8 +3,8 @@ title: "Managing Active Anti-Entropy"
 date: "2016"
 summary: "Configuration reference for the Riak database's active anti-entropy system."
 weight: 40
+hiddenInHomelist: true
 params:
-  hiddenInHomelist: true
   sample:
     kind: "Reference"
     src: "Basho"

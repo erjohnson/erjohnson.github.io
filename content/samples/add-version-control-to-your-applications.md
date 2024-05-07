@@ -3,8 +3,8 @@ title: "Add Simple Version Control to Your Applications"
 date: "2014"
 summary: "Article I wrote for the Orchestrate developer marketing blog."
 weight: 30
+hiddenInHomelist: true
 params:
-  hiddenInHomelist: true
   sample:
     kind: "Blog"
     src: "Orchestrate"

@@ -2,8 +2,8 @@
 title: "Migrate Users from Stormpath to Auth0"
 summary: "I wrote this tutorial on migrating users from a competitor when it announced it was closing down."
 weight: 20
+hiddenInHomelist: true
 params:
-  hiddenInHomelist: true
   sample:
     kind: "Tutorial"
     src: "Auth0"
