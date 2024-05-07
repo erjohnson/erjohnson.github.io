@@ -1,27 +1,16 @@
 {{ define "main" }}
-	<div class="post-content">
+	<article class="overlay">
 		{{ .Content }}
-	</div>
-
-
-	{{ range .Paginator.Pages }}
-	<article class="post-entry">
-	  <div class="entry-header">
-	    <p class="entry-hint-parent">
-	      {{- .Title }}
-	    </p>
-	  </div>
-	  {{- if (ne (.Param "hideSummary") true) }}
-	  <div class="entry-content">
-	    <p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
-	  </div>
-	  {{- end }}
-	  {{- if not (.Param "hideMeta") }}
-	  <div class="entry-footer">
-	    <p>{{ .Params.sample.kind }}, {{ .Params.sample.src }}</p>
-	  </div>
-	  {{- end }}
-	  <a class="entry-link" aria-label="post link to {{ .Title | plainify }}" href="{{ .Permalink }}"></a>
+		<br/>
+		<ul class="postlist">
+			{{ range .Paginator.Pages }}
+				<li>
+					<a aria-label="link to writing sample {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
+					<span class="dateBit">{{ .Params.sample.kind }}, {{ .Params.sample.src }}</span>
+					<p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+					<br/>
+				</li>
+			{{ end }}
+		</ul>
 	</article>
-	{{ end }}
 {{ end }}

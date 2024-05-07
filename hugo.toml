@@ -1,7 +1,7 @@
 baseURL = "https://erjohnson.github.io"
 languageCode = 'en-us'
 title = "ej"
-theme = "PaperMod"
+theme = "or"
 copyright = "Eric Johnson"
 defaultContentLanguage = "en"
 
@@ -26,9 +26,5 @@ enableRobotsTXT = true
     name = 'Writing Samples'
     pageRef = '/samples'
     weight = 20
-
-[params]
-	hideFooter = true
-	width = '52rem'
 
 
