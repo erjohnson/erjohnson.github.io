@@ -1,14 +1,14 @@
 {{ define "main" }}
-	<article class="overlay">
+	<article>
 		<!-- <h1>{{ .Title }}</h1> -->
 		{{ .Content }}
 		<ul class="postlist">
 			{{ range .Pages }}
 				<li>
-					<a aria-label="link to {{ .Title | plainify }}" href="{{ .Permalink }}">{{ .Title }}</a>
 					{{ $dateMachine := .Date | time.Format "2006-01-02T15:04:05-07:00" }}
-					{{ $dateHuman := .Date | time.Format ":date_long" }}
+					{{ $dateHuman := .Date | time.Format "2006-01-02" }}
 					<span class="dateBit"><time datetime="{{ $dateMachine }}">{{ $dateHuman }}</time></span>
+					<a aria-label="link to {{ .Title | plainify }}" href="{{ .Permalink }}">{{ .Title }}</a>
 					<!-- {{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }} -->
 				</li>
 			{{ end }}

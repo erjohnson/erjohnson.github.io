@@ -5,7 +5,8 @@ body {
     box-sizing: border-box;
 
     --font-sans: system-ui,sans-serif;
-    --font-mono: monospace;
+    --font-mono: ui-monospace, 'Cascadia Code', 'Source Code Pro', Menlo, Consolas, 'DejaVu Sans Mono', monospace;
+    --font-serif: Charter, 'Bitstream Charter', 'Sitka Text', Cambria, serif;;
 
     --primary-bg: #fdfeff;
     --primary-text: #111111;
@@ -32,7 +33,9 @@ body {
 
 html {
     /* rem for the page */
-    font-size: 16px;
+    font-size: 1.125rem;
+    /*-webkit-font-smoothing: antialiased;
+  	-moz-osx-font-smoothing: grayscale;*/
 }
 
 body {
@@ -48,11 +51,16 @@ body {
 }
 
 button#theme-toggle {
-    font-size: 26px;
-    margin: auto 4px;
-    color: var(--primary-text);
+    margin-left: auto;
+    color: var(--secondary-text);
     background: var(--primary-bg);
     border: none;
+}
+
+button#theme-toggle:hover {
+    cursor: pointer;
+    color: var(--primary-text);
+    background: var(--primary-bg);
 }
 
 body.dark #moon {
@@ -102,7 +110,9 @@ a {
 
 h1,
 h2,
-h3 {
+h3,
+h4 {
+	font-family: var(--font-sans);
     line-height: 1.5em;
     color: var(--primary-text);
     margin-top: 1.5em;
@@ -115,13 +125,9 @@ h1 {
     font-size: 2em;
 }
 
-h2 {
-    font-size: 1.5em;
-}
-
-h3 {
-    font-size: 1.2em;
-}
+h2 { font-size: 1.55em; }
+h3 { font-size: 1.25em; }
+h4 { font-size: 1.15em; }
 
 p, li {
     line-height: 1.5em;
@@ -136,15 +142,18 @@ p img.blend-multiply {
 /* HEADER */
 
 header a {
+	color: var(--secondary-text);
     text-decoration: none;
-    font-size: 1.125em;
+/*    font-size: 1.125em;*/
 }
 
 header .active {
+	color: var(--primary-text);
 	font-weight: 500;
 }
 
 header a:hover {
+	color: var(--primary-text);
     text-decoration: underline;
 }
 
@@ -160,11 +169,6 @@ nav {
 header {
     background: var(--primary-bg);
     height: 100px;
-}
-
-.home {
-/*    font-weight: bold;*/
-    margin-right: 3ch;
 }
 
 nav {
@@ -402,11 +406,25 @@ ul.postlist li {
     list-style: none;
 }
 
+.sample-entry {
+	display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 1em;
+}
+
 .postlist .dateBit {
-    margin-left: .25em;
+	margin-right: 2em;
     color: var(--secondary-text);
     font-size: calc(1em - 2px);
-    font-style: italic;
+    font-family: var(--font-mono);
+    white-space: nowrap;
+}
+
+.postlist .sampleBit {
+    color: var(--secondary-text);
+    font-size: .75rem;
+    font-family: var(--font-mono);
     white-space: nowrap;
 }
 
@@ -428,7 +446,7 @@ ul.postlist li {
 
 @media only screen and (min-width: 600px) {
     nav {
-        gap: 2ch;
+        gap: 2em;
     }
 
     .overlay {
@@ -448,16 +466,12 @@ ul.postlist li {
 
     h1 {
         margin-top: 1em;
-        font-size: 3em;
+        font-size: 2em;
     }
 
-    h2 {
-        font-size: 2.25em;
-    }
-
-    h3 {
-        font-size: 1.5em;
-    }
+    h2 { font-size: 1.55em; }
+    h3 { font-size: 1.25em; }
+    h4 { font-size: 1.15em; }
 
     pre > code {
         font-size: 1em;

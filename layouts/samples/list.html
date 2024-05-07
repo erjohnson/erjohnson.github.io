@@ -1,13 +1,15 @@
 {{ define "main" }}
-	<article class="overlay">
+	<article>
 		{{ .Content }}
 		<br/>
 		<ul class="postlist">
 			{{ range .Pages }}
 				<li>
-					<a aria-label="link to writing sample {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
-					<span class="dateBit">{{ .Params.sample.kind }}, {{ .Params.sample.src }}</span>
-					<p>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</p>
+					<div class="sample-entry">
+						<a aria-label="link to writing sample {{ .Title | plainify }}" href="{{ .Permalink }}">{{- .Title }}</a>
+						<span class="sampleBit">{{ .Params.sample.kind }}, {{ .Params.sample.src }}</span>
+					</div>
+					<summary>{{ .Summary | plainify | htmlUnescape }}{{ if .Truncated }}...{{ end }}</summary>
 					<br/>
 				</li>
 			{{ end }}
