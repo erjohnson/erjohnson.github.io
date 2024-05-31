@@ -2,7 +2,12 @@
 title: "About"
 ---
 
-I'm Eric Johnson, a technical writer and programmer based in Portland, Oregon. I've been writing about tech since 2014.
+Hi :wave: I'm Eric, a technical writer and programmer based in Portland, Oregon.
+
+You can find me on:
+
+- [GitHub](https://github.com/erjohnson)
+- [LinkedIn](https://www.linkedin.com/in/erjohnsonpdx/)
 
 I use [Odin](https://odin-lang.org) or C/C++ for most of my personal programming projects.
 

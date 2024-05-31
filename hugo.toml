@@ -11,6 +11,8 @@ defaultContentLanguage = "en"
 # Generate a nice robots.txt for SEO
 enableRobotsTXT = true
 
+enableEmoji = true
+
 [markup]
   [markup.highlight]
     lineNos = false
