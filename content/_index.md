@@ -9,8 +9,6 @@ You can find me on:
 - [GitHub](https://github.com/erjohnson)
 - [LinkedIn](https://www.linkedin.com/in/erjohnsonpdx/)
 
-I use [Odin](https://odin-lang.org) or C/C++ for most of my personal programming projects.
-
 ## Blog roll
 
 - [Alex Tardif (graphics)](https://alextardif.com/)
